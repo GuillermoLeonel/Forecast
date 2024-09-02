@@ -1,0 +1,13 @@
+﻿@model Forecast_Master.Models.ErrorViewModel
+
+<div class="text-center">
+    <h1 class="display-4">¡Error!</h1>
+    <p>Lo sentimos, ocurrió un error al procesar tu solicitud.</p>
+    @if (Model.ShowRequestId)
+    {
+        <p>
+            <strong>Id de solicitud:</strong> @Model.RequestId
+        </p>
+    }
+    <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Volver al Inicio</a>
+</div>
